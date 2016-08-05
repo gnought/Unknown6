@@ -42,7 +42,7 @@ message Signature {
         double accelerometer_x = 16;
         double accelerometer_y = 17;
         double accelerometer_z = 18; // Always 0x40239999a0000000 in the dumps its 9.8 double
-        uint64 accelerometer_axes = 19; // Always 3
+        uint64 accelerometer_axes = 19; // Always 3, this may match https://developer.android.com/reference/android/hardware/Sensor.html#TYPE_ORIENTATION
     }
 
     message DeviceInfo {
